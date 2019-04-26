@@ -1,7 +1,7 @@
 install:
 	virtualenv testing
 	. testing/bin/activate
-	pip install --user -r requirements.txt
+	pip install -r requirements.txt
 
 jenkins_test:
-	/root/.local/bin/nosetests/nosetests app/ -v
+	testing/bin/nosetests app/ -v
